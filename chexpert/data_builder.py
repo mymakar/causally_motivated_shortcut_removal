@@ -314,7 +314,7 @@ def build_input_fns(skew_train='False', p_tr=0.7, p_val=0.25,
 		os.system(f'mkdir -p {experiment_directory}')
 
 	# --- generate splits if they dont exist
-	if not os.path.exists(f'{experiment_directory}/sk_train.txt'):
+	if not os.path.exists(f'{experiment_directory}/skew_train.txt'):
 
 		create_save_chexpert_lists(
 			experiment_directory=experiment_directory,
