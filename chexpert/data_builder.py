@@ -256,7 +256,7 @@ def create_save_chexpert_lists(experiment_directory, p_tr=.7, p_val=0.25, random
 
 	# --- split training into training and validation
 	tr_candidates = rng.choice(tr_val_candidates,
-		size=int(1-p_val * len(tr_val_candidates)), replace=False).tolist()
+		size=int((1-p_val) * len(tr_val_candidates)), replace=False).tolist()
 	val_candidates = list(set(tr_val_candidates) - set(tr_candidates))
 
 	tr_candidates_df = df[(df.patient.isin(tr_candidates))].reset_index(drop=True)
