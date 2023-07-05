@@ -1,7 +1,7 @@
 # Instructions to run the waterbirds experiments
 
 ## Step 0: Download the datasets
-You'll first have to download the [CUB](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html) dataset including the bird segmentation dataset.
+You'll first have to download the [CUB](http://www.vision.caltech.edu/datasets/cub_200_2011/) dataset including the bird segmentation dataset.
 You also need to download the [places](http://places2.csail.mit.edu/download.html) dataset. We used the high-resolution training images (MD5: 67e186b496a84c929568076ed01a8aa1) from Places.
 
 In the paper we explain that the original places dataset has several noisy backgrounds. For example some images included other birds (making the task of bird identification difficult). We picked about 200 clean land backgrounds, and 300 clean water backgrounds and augmented that data by rotations, zooming, and manipulating brightness. A tarball of the clean + augmented background images (\~500M) is [here](https://drive.google.com/file/d/19ZL2WTHOTtEDUSzldZKEb4JqUC-5vX8B/view).
